@@ -1,0 +1,34 @@
+{
+  "name": "nnn-stack-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NNN Stack Starter",
+  "scripts": {
+    "add:api": "pnpm add --filter=api",
+    "add:web": "pnpm add --filter=web",
+    "build": "turbo build",
+    "changeset": "changeset",
+    "clear:modules": "npx npkill",
+    "commit": "cz",
+    "dev": "turbo dev",
+    "dev:api": "pnpm dev --filter=api",
+    "dev:web": "pnpm dev --filter=web",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "turbo lint",
+    "prepare": "husky",
+    "start": "turbo start",
+    "test": "turbo test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.0",
+    "typescript": "^5",
+    "zod": "^3.24.2"
+  }
+}
